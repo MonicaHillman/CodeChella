@@ -1,0 +1,22 @@
+.cabecalho {
+    background-color: var(--roxo);
+}
+
+.cabecalho__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecalho__menu {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../assets/menu.png');
+    background-repeat: no-repeat;
+}
+
+.menu-lista__item a {
+    text-decoration: none;
+    color: inherit;
+}
