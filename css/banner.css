@@ -1,0 +1,17 @@
+.banner-principal {
+    height: 270px;
+    background-image: url('../assets/banner1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 32px;
+    line-height: 42px;
+}

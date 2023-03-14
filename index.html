@@ -8,7 +8,11 @@
     <title>CodeChella</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,25 +21,100 @@
 
 <body>
     <header class="cabecalho">
-        <div class="cabecalho__container">
-            <img src="./assets/Logo.png" alt="Logo do Codechella" />
-            <span class="cabecalho__menu"></span>
-        </div>
-        <ul class="cabecalho__menu-lista">
-            <li class="menu-lista__item">
-                <a href="#">A experiência</a>
-            </li>
-            <li class="menu-lista__item">
-                <a href="#">Mapa de setores</a>
-            </li>
-            <li class="menu-lista__item">
-                <a href="#">Informações</a>
-            </li>
-            <li class="menu-lista__item">
-                <a href="#">Ingresso</a>
-            </li>
-        </ul>
+        <nav class="cabecalho__menu-nav">
+            <div class="cabecalho__container">
+                <img src="./assets/Logo.png" alt="Logo do Codechella" />
+                <label for="menu" class="container__rotulo">
+                    <span class="cabecalho__menu"></span>
+                </label>
+            </div>
+            <input type="checkbox" id="menu" class="cabecalho__menu-botao">
+            <ul class="cabecalho__menu-lista">
+                <li class="menu-lista__item">
+                    <a href="#">A experiência</a>
+                </li>
+                <li class="menu-lista__item">
+                    <a href="#">Mapa de setores</a>
+                </li>
+                <li class="menu-lista__item">
+                    <a href="#">Informações</a>
+                </li>
+                <li class="menu-lista__item">
+                    <a href="#">Ingresso</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <section class="banner-principal">
+        <h1 class="banner-titulo">Boas-vindas ao<br>
+            #CodeChella2023!</h1>
+    </section>
+    <main class="container-principal">
+        <section class="container-eventos">
+            <img src="./assets/banda1.png" alt="Fotografia de uma banda" class="container-eventos__imagem" />
+            <h2 class="container-eventos__titulo">
+                &lt; 11 e 12 de Março &gt; <br>
+                Aluródromo de São Paulo
+            </h2>
+            <p class="container-eventos__texto">
+                Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e,
+                claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!
+            </p>
+            <a class="container-eventos__botao">
+                Comprar ingresso!
+                <img src="./assets/carta.svg" alt="" aria-hidden="true" />
+            </a>
+        </section>
+        <section class="container-lineup">
+            <h2 class="container-lineup__titulo">/Line-Up/</h2>
+            <h3 class="container-lineup__subtitulo">Sábado &lt;11/03&gt;</h3>
+            <ul class="container-lineup__lista lista-sabado">
+                <li class="lineup-lista--principal">System of a DOM</li>
+                <li class="lineup-lista--secundario">Python Maiden</li>
+                <li class="lineup-lista--secundario">Apollo Client 2001</li>
+                <li class="lineup-lista--secundario">Bon Java</li>
+                <li class="lineup-lista--secundario">NickCallback</li>
+                <li class="lineup-lista--terceiro">Linkin Promises</li>
+                <li class="lineup-lista--terceiro">Fullstack Fighters</li>
+                <li class="lineup-lista--terceiro">Papa React</li>
+                <li class="lineup-lista--terceiro">Angular in Chains</li>
+                <li>Agnostic Front-end</li>
+                <li>SlipkNode</li>
+                <li>Pink Flutter</li>
+                <li>Kiss</li>
+            </ul>
+
+            <h3 class="container-lineup__subtitulo">Domingo &lt;12/03&gt;</h3>
+            <ul class="container-lineup__lista">
+                <li class="lineup-lista--principal">Lana Del Ploy</li>
+                <li class="lineup-lista--secundario">Dua Lib</li>
+                <li class="lineup-lista--secundario">The Backnd</li>
+                <li class="lineup-lista--secundario">CSS Styles</li>
+                <li class="lineup-lista--secundario">ArrayAna Grande</li>
+                <li class="lineup-lista--secundario">DJ Query</li>
+                <li class="lineup-lista--terceiro">Miley Cypress</li>
+                <li class="lineup-lista--terceiro">The Bootstrap Boys</li>
+                <li class="lineup-lista--terceiro">Json Derulo</li>
+                <li class="lineup-lista--terceiro">CloudPlay</li>
+                <li class="lineup-lista--terceiro">Dev Lovato</li>
+                <li>Kylie MiLOG</li>
+                <li>Jenkins Brothers</li>
+                <li>Rubycat Dolls</li>
+            </ul>
+        </section>
+    </main>
+    <section class="container-banner"></section>
+    <footer class="rodape">
+        <img src="./assets/Logo.png" alt="logo do CodeChella" />
+        <p>Acesse nossas redes:</p>
+        <div>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-twitch"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
 </body>
 
 </html>

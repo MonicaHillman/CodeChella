@@ -1,12 +1,23 @@
 @import url('./cabecalho.css');
+@import url('./banner.css');
+@import url('./container-eventos.css');
+@import url('./container-principal.css');
+@import url('./container-lineup.css');
+@import url('./banner-secundario.css');
+@import url('./rodape.css');
 
 :root {
     --roxo: #4650BD;
     --branco: #FFFFFF;
+    --fonte-principal: 'Raleway', sans-serif;
+    --fonte-titulo: 'Calistoga';
+    --verde: #008364;
 }
 
 body {
     color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
     background: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
     background-repeat: no-repeat;
 }

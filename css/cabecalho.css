@@ -1,5 +1,7 @@
 .cabecalho {
     background-color: var(--roxo);
+    position: relative;
+    padding: 1em;
 }
 
 .cabecalho__container {
@@ -12,11 +14,38 @@
     display: block;
     width: 25px;
     height: 25px;
+    background-position: center;
     background-image: url('../assets/menu.png');
     background-repeat: no-repeat;
+}
+
+.cabecalho__menu-botao {
+    display: none;
+}
+
+.cabecalho__menu-lista {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 40vw;
+    background-color: var(--roxo);
+    text-align: center;
+    padding: .5em 1em;
+}
+
+.menu-lista__item {
+    padding: .5em;
+}
+
+.menu-lista__item:not(:last-child) {
+    border-bottom: 1px solid var(--branco);
 }
 
 .menu-lista__item a {
     text-decoration: none;
     color: inherit;
+}
+
+.cabecalho__menu-botao:checked~.cabecalho__menu-lista {
+    display: block;
 }

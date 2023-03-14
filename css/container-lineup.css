@@ -1,0 +1,57 @@
+.container-lineup__titulo {
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 80px;
+}
+
+.container-lineup__subtitulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    padding: 10px 6px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+    background-color: var(--verde);
+}
+
+.container-lineup__lista {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.lista-sabado {
+    margin-bottom: 96px;
+}
+
+.container-lineup__lista li {
+    padding: .25em 0;
+}
+
+.container-lineup__lista li:nth-child(2n + 1) {
+    padding-bottom: .5em;
+}
+
+.lineup-lista--principal {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.lineup-lista--secundario {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.lineup-lista--terceiro {
+    font-size: 32px;
+    font-weight: 700;
+}
