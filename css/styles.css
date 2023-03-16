@@ -1,9 +1,9 @@
 @import url('./cabecalho.css');
-@import url('./banner.css');
-@import url('./container-eventos.css');
-@import url('./container-principal.css');
-@import url('./container-lineup.css');
-@import url('./banner-secundario.css');
+@import url('./home/banner.css');
+@import url('./home/container-eventos.css');
+@import url('./home/container-principal.css');
+@import url('./home/container-lineup.css');
+@import url('./home/banner-secundario.css');
 @import url('./rodape.css');
 
 :root {

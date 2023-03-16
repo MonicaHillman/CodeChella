@@ -49,3 +49,31 @@
 .cabecalho__menu-botao:checked~.cabecalho__menu-lista {
     display: block;
 }
+
+@media screen and (min-width: 768px) {
+    .cabecalho__menu-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho__container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cabecalho__menu-lista {
+        position: initial;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cabecalho__menu {
+        display: none;
+    }
+
+    .menu-lista__item:not(:last-child) {
+        border: none;
+    }
+}
