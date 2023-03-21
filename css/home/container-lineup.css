@@ -55,3 +55,24 @@
     font-size: 32px;
     font-weight: 700;
 }
+
+
+@media screen and (min-width: 768px) {
+
+    .container-lineup__subtitulo {
+        width: max-content;
+        padding: 1em;
+        margin: 1em auto;
+    }
+
+    .container-lineup__lista {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-lineup__lista li {
+        padding-left: 1em;
+    }
+}

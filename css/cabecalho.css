@@ -67,6 +67,7 @@
         position: initial;
         display: flex;
         justify-content: space-around;
+        width: 100%;
     }
 
     .cabecalho__menu {
@@ -75,5 +76,12 @@
 
     .menu-lista__item:not(:last-child) {
         border: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho__menu-nav {
+        display: flex;
+        flex-direction: row;
     }
 }

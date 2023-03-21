@@ -1,3 +1,7 @@
+.container-eventos {
+    text-align: center;
+}
+
 .container-eventos__imagem {
     width: 100%;
     height: 381px;
@@ -6,7 +10,6 @@
 }
 
 .container-eventos__titulo {
-    text-align: center;
     font-size: 32px;
     line-height: 38px;
     font-weight: 700;
@@ -17,7 +20,6 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 40px;
-    text-align: center;
 }
 
 .container-eventos__botao {
@@ -34,4 +36,20 @@
     line-height: 40px;
 
     margin: 1em 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container-eventos__botao {
+        width: max-content;
+        padding: 1em;
+        margin: 1em auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container-eventos {
+        display: flex;
+        gap: 4em;
+    }
 }

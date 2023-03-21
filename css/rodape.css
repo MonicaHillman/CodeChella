@@ -5,13 +5,52 @@
     padding: 1em;
 }
 
-.rodape div {
+.rodape-sociais {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin: 15px 0 32px;
 }
 
-.rodape div a {
+.rodape-sociais a {
     color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+    .rodape div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: .5em
+    }
+
+    .rodape-sociais {
+        margin: 0 1em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .rodape img {
+        width: fit-content;
+    }
+
+    .rodape {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .rodape>* {
+        flex: 1 1 80px;
+    }
+
+    .rodape-copyright {
+        width: fit-content;
+        height: 50px;
+        display: flex;
+        align-items: center;
+
+    }
 }
