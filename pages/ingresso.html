@@ -17,6 +17,7 @@
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ingresso/formulario.css">
 
 </head>
 
@@ -24,7 +25,9 @@
     <header class="cabecalho">
         <nav class="cabecalho__menu-nav">
             <div class="cabecalho__container">
-                <img src="../assets/Logo.png" alt="Logo do Codechella" />
+                <a href="/">
+                    <img src="../assets/Logo.png" alt="Logo do Codechella" />
+                </a>
                 <label for="menu" class="container__rotulo">
                     <span class="cabecalho__menu"></span>
                 </label>
@@ -40,7 +43,7 @@
                 <li class="menu-lista__item">
                     <a href="./informacoes.html">Informações</a>
                 </li>
-                <li class="menu-lista__item">
+                <li class="menu-lista__item active">
                     <a href="./ingresso.html">Ingresso</a>
                 </li>
             </ul>
@@ -50,7 +53,34 @@
         <h1 class="banner-titulo">A experiência</h1>
     </section>
     <main class="container-principal">
+        <h2>Preencha o formulário a seguir:</h2>
+        <form class="formulario-ingresso">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="formulario-ingresso__container">
+                <div>
+                    <label for="ticket-type">Tipo de ingresso:</label>
+                    <select id="ticket-type" name="ticket-type" required>
+                        <option value="">Tipo de ingresso</option>
+                        <option value="Pista Premium">Pista Premium</option>
+                        <option value="Pista Comum">Pista Comum</option>
+                        <option value="Cadeiras Terreo">Cadeiras térreo</option>
+                        <option value="Cadeiras Superiores">Cadeiras superiores</option>
+                        <option value="Rampas">Rampas</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="birthdate">Data de nascimento</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+            </div>
+            <button type="submit">Avançar!
+                <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+            </button>
+        </form>
     </main>
     <footer class="rodape">
         <img src="../assets/Logo.png" alt="logo do CodeChella" />
@@ -65,6 +95,7 @@
         </div>
         <p class="rodape-copyright">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
+    <script src="../scripts/ingresso.js"></script>
 </body>
 
 </html>
