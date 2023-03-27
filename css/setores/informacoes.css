@@ -1,0 +1,40 @@
+h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    margin: .5em 0;
+}
+
+.informacoes {
+    margin: 2em 0;
+}
+
+.informacoes p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.informacoes div img {
+    margin-top: 2em;
+}
+
+@media screen and (min-width: 1440px) {
+    .informacoes_cards {
+        display: flex;
+    }
+
+    .informacoes_cards div {
+        margin: 0 1em;
+    }
+
+    .informacoes_cards div:nth-child(2) {
+        margin-top: 3em
+    }
+}

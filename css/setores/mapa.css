@@ -1,0 +1,80 @@
+.container-principal {
+    margin: 5% 10%;
+    text-align: center;
+}
+
+.mapa {
+    display: grid;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.mapa img {
+    width: 100%;
+}
+
+.mapa ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+.mapa ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa ul li span {
+    width: 32px;
+    height: 32px;
+    margin-right: 2em;
+}
+
+.mapa ul li:first-of-type>span {
+    background-color: rgb(14, 125, 241);
+}
+
+.mapa ul li:nth-of-type(2)>span {
+    background-color: rgb(254, 1, 110);
+}
+
+.mapa ul li:nth-of-type(3)>span {
+    background-color: rgb(1, 168, 158);
+}
+
+.mapa ul li:nth-of-type(4)>span {
+    background-color: rgb(63, 81, 181);
+}
+
+.mapa ul li:nth-of-type(5)>span {
+    background-color: rgb(14, 125, 241);
+}
+
+.mapa ul li p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+@media screen and (min-width: 1440px) {
+    .mapa img {
+        width: 50%;
+    }
+
+    .mapa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapa ul {
+        justify-content: initial;
+    }
+}
