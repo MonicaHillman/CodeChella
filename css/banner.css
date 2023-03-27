@@ -12,6 +12,11 @@
     mix-blend-mode: normal;
 }
 
+.banner-informacoes {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/informacoes.png');
+    mix-blend-mode: normal;
+}
+
 .banner-principal {
     height: 270px;
     background-size: cover;
